@@ -119,7 +119,7 @@
   "leftColumn": 1,
   "onPageChange": "{{SelectQuery.run()}}",
   "onSearchTextChanged": "{{SelectQuery.run()}}",
-  "onSort": "{{showAlert('test onSort', 'error');\nJSObject2.Table1onSort();}}",
+  "onSort": "{{showAlert('test onSort', 'info');\nJSObject2.Table1onSort();}}",
   "parentColumnSpace": 1,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,

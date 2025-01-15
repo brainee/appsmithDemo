@@ -1,0 +1,64 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 122,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{\n  \"tips\": [\n    \"Pass data to this widget in the default model field\",\n    \"Access data in the javascript file using the appsmith.model variable\",\n    \"Create events in the widget and trigger them in the javascript file using appsmith.triggerEvent('eventName')\",\n    \"Access data in CSS as var(--appsmith-model-{property-name})\"\n  ]\n}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "n24b4izyy9",
+  "leftColumn": 8,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 124,
+  "mobileLeftColumn": 11,
+  "mobileRightColumn": 34,
+  "mobileTopRow": 94,
+  "needsErrorInfo": false,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "parentColumnSpace": 17.9375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 39,
+  "srcDoc": {
+    "css": ".app {\n  height: calc(var(--appsmith-ui-height) * 1px);\n  width: calc(var(--appsmith-ui-width) * 1px);\n  justify-content: center;\n  border-radius: var(--appsmith-theme-borderRadius);\n  box-shadow: var(--appsmith-theme-boxShadow);\n}\n\n.tip-container {\n  margin-bottom: 20px;\n}\n\n.tip-container h2 {\n  margin-bottom: 20px;\n  font-size: 16px;\n  font-weight: 700;\n}\n\n.tip-header {\n  display: flex;\n  justify-content: space-between;\n  align-items: baseline;\n}\n\n.tip-header div {\n  color: #999;\n}\n\n.button-container {\n  text-align: right;\n}\n\n.button-container button {\n  margin: 0 10px;\n  border-radius: var(--appsmith-theme-borderRadius);\n}\n\n.button-container button.primary {\n  background: var(--appsmith-theme-primaryColor) !important;\n}\n\n.button-container button.reset {\n  color: var(--appsmith-theme-primaryColor) !important;\n  border-color: var(--appsmith-theme-primaryColor) !important;\n}",
+    "html": "<!-- no need to write html, head, body tags, it is handled by the widget -->\n<div id=\"root\"></div>\n\n<!-- Including the stylesheet for the React Image Gallery from the specified CDN. -->\n\n<link href=\"\n\t\t\t\t\t\thttps://cdn.jsdelivr.net/npm/react-image-gallery@1.3.0/styles/css/image-gallery.min.css\n\t\t\t\t\t\t\" rel=\"stylesheet\">",
+    "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport reactDom from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\nimport ImageGallery from 'https://cdn.jsdelivr.net/npm/react-image-gallery@1.3.0/+esm';\n\n// Define the App component with the image gallery\nfunction App() {\n  // Array of image objects for the carousel (Static Images Example)\n  const images = [{\n    original: \"https://picsum.photos/id/1018/1000/600/\",\n    thumbnail: \"https://picsum.photos/id/1018/250/150/\"\n  }, {\n    original: \"https://picsum.photos/id/1015/1000/600/\",\n    thumbnail: \"https://picsum.photos/id/1015/250/150/\"\n  }, {\n    original: \"https://picsum.photos/id/1019/1000/600/\",\n    thumbnail: \"https://picsum.photos/id/1019/250/150/\"\n  }];\n\n  // Render the ImageGallery component with the images\n  return /*#__PURE__*/React.createElement(ImageGallery.default, {\n    items: images\n  });\n}\nappsmith.onReady(() => {\n  /*\n   * This handler function will get called when parent application is ready.\n   * Initialize your component here\n   * more info - https://docs.appsmith.com/reference/widgets/custom#onready\n   */\n  reactDom.render( /*#__PURE__*/React.createElement(App, null), document.getElementById(\"root\"));\n});"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 92,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": ".app {\n\theight: calc(var(--appsmith-ui-height) * 1px);\n\twidth: calc(var(--appsmith-ui-width) * 1px);\n\tjustify-content: center;\n\tborder-radius: var(--appsmith-theme-borderRadius);\n\tbox-shadow: var(--appsmith-theme-boxShadow);\n}\n\n.tip-container {\n  margin-bottom: 20px;\n}\n\n.tip-container h2 {\n  margin-bottom: 20px;\n\tfont-size: 16px;\n\tfont-weight: 700;\n}\n\n.tip-header {\n\tdisplay: flex;\n\tjustify-content: space-between;\n\talign-items: baseline;\n}\n\n.tip-header div {\n\tcolor: #999;\n}\n\n.button-container {\n\ttext-align: right;\n}\n\n.button-container button {\n  margin: 0 10px;\n\tborder-radius: var(--appsmith-theme-borderRadius);\n}\n\n.button-container button.primary {\n\tbackground: var(--appsmith-theme-primaryColor) !important;\n}\n\n.button-container button.reset {\n\tcolor: var(--appsmith-theme-primaryColor) !important;\n\tborder-color: var(--appsmith-theme-primaryColor) !important;\n}",
+    "html": "<!-- no need to write html, head, body tags, it is handled by the widget -->\n<div id=\"root\"></div>\n\n<!-- Including the stylesheet for the React Image Gallery from the specified CDN. -->\n\n<link href=\"\n\t\t\t\t\t\thttps://cdn.jsdelivr.net/npm/react-image-gallery@1.3.0/styles/css/image-gallery.min.css\n\t\t\t\t\t\t\" rel=\"stylesheet\">",
+    "js": "import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm';\nimport reactDom from 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm';\nimport ImageGallery from 'https://cdn.jsdelivr.net/npm/react-image-gallery@1.3.0/+esm';\n\n// Define the App component with the image gallery\nfunction App() {\n  // Array of image objects for the carousel (Static Images Example)\n  const images = [\n    {\n      original: \"https://picsum.photos/id/1018/1000/600/\",\n      thumbnail: \"https://picsum.photos/id/1018/250/150/\",\n    },\n    {\n      original: \"https://picsum.photos/id/1015/1000/600/\",\n      thumbnail: \"https://picsum.photos/id/1015/250/150/\",\n    },\n    {\n      original: \"https://picsum.photos/id/1019/1000/600/\",\n      thumbnail: \"https://picsum.photos/id/1019/250/150/\",\n    },\n  ];\n\n  // Render the ImageGallery component with the images\n  return <ImageGallery.default items={images} />;\n}\nappsmith.onReady(() => {\n\t/*\n\t * This handler function will get called when parent application is ready.\n\t * Initialize your component here\n\t * more info - https://docs.appsmith.com/reference/widgets/custom#onready\n\t */\n\treactDom.render(<App />, document.getElementById(\"root\"));\n});"
+  },
+  "version": 1,
+  "widgetId": "gvqxikbuzo",
+  "widgetName": "Custom1"
+}
